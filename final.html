@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body class="bg-black text-white flex items-center justify-center h-screen text-center">
+    <div id="content" class="opacity-0">
+        <p class="text-lg">
+            Thank you for your time and participation. For clarification purposes, you know how to reach me.
+        </p>
+    </div>
+
+    <script>
+        gsap.to("#content", { opacity: 1, y: -20, duration: 1, ease: "power2.out" });
+    </script>
+</body>
+</html>
